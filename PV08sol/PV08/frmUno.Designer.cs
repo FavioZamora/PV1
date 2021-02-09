@@ -1,6 +1,6 @@
 ﻿namespace PV08
 {
-    partial class Form1
+    partial class frmUno
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,20 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnllamaraformaDos = new System.Windows.Forms.Button();
+            this.btnLlamaraformaDos = new System.Windows.Forms.Button();
             this.lblFormaUno = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnLlamaraformaTres = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnllamaraformaDos
+            // btnLlamaraformaDos
             // 
-            this.btnllamaraformaDos.Location = new System.Drawing.Point(583, 377);
-            this.btnllamaraformaDos.Name = "btnllamaraformaDos";
-            this.btnllamaraformaDos.Size = new System.Drawing.Size(170, 43);
-            this.btnllamaraformaDos.TabIndex = 0;
-            this.btnllamaraformaDos.Text = "Llamar a forma Dos";
-            this.btnllamaraformaDos.UseVisualStyleBackColor = true;
-            this.btnllamaraformaDos.Click += new System.EventHandler(this.button1_Click);
+            this.btnLlamaraformaDos.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnLlamaraformaDos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLlamaraformaDos.Location = new System.Drawing.Point(388, 359);
+            this.btnLlamaraformaDos.Name = "btnLlamaraformaDos";
+            this.btnLlamaraformaDos.Size = new System.Drawing.Size(172, 61);
+            this.btnLlamaraformaDos.TabIndex = 0;
+            this.btnLlamaraformaDos.Text = "Llamar a forma Dos";
+            this.btnLlamaraformaDos.UseVisualStyleBackColor = false;
+            this.btnLlamaraformaDos.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblFormaUno
             // 
@@ -62,15 +65,29 @@
             this.btnCerrar.TabIndex = 2;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnLlamaraformaTres
+            // 
+            this.btnLlamaraformaTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLlamaraformaTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLlamaraformaTres.Location = new System.Drawing.Point(603, 359);
+            this.btnLlamaraformaTres.Name = "btnLlamaraformaTres";
+            this.btnLlamaraformaTres.Size = new System.Drawing.Size(172, 61);
+            this.btnLlamaraformaTres.TabIndex = 3;
+            this.btnLlamaraformaTres.Text = "Llamar a forma Tres";
+            this.btnLlamaraformaTres.UseVisualStyleBackColor = false;
+            this.btnLlamaraformaTres.Click += new System.EventHandler(this.btnLlamaraformaTres_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLlamaraformaTres);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblFormaUno);
-            this.Controls.Add(this.btnllamaraformaDos);
+            this.Controls.Add(this.btnLlamaraformaDos);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -80,9 +97,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnllamaraformaDos;
+        private System.Windows.Forms.Button btnLlamaraformaDos;
         private System.Windows.Forms.Label lblFormaUno;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnLlamaraformaTres;
     }
 }
 

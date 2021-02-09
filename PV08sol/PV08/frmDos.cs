@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace PV08
 {
-    public partial class Form2 : Form
+    public partial class frmDos : Form
     {
-        public Form2()
+        public frmDos()
         {
             InitializeComponent();
         }
 
         private void btncerrarforma_Click(object sender, EventArgs e)
         {
+            frmDos frmDos = new frmDos();
+            this.Close();
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            frmTres frmTres = new frmTres();
+            frmTres.Show();
         }
     }
 }
